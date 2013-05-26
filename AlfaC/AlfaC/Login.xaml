@@ -1,0 +1,63 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+	x:Class="AlfaC.Login"
+	x:Name="Window"
+	Title="Login"
+	Width="470" Height="300" WindowStyle="None">
+
+	<Grid x:Name="LayoutRoot">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="0.527*"/>
+			<RowDefinition Height="0.411*"/>
+			<RowDefinition Height="0.062*"/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="0.468*"/>
+			<ColumnDefinition Width="0.532*"/>
+		</Grid.ColumnDefinitions>
+		<Grid Grid.ColumnSpan="2" Grid.RowSpan="3">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="0.156*"/>
+				<ColumnDefinition Width="0.294*"/>
+				<ColumnDefinition Width="0.018*"/>
+				<ColumnDefinition Width="0.017*"/>
+				<ColumnDefinition Width="0.277*"/>
+				<ColumnDefinition Width="0.238*"/>
+			</Grid.ColumnDefinitions>
+			<Grid.Background>
+				<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+					<GradientStop Color="#FFBA2010" Offset="0"/>
+					<GradientStop Color="#FF995E58" Offset="1"/>
+				</LinearGradientBrush>
+			</Grid.Background>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="0.352*"/>
+				<RowDefinition Height="0.146*"/>
+				<RowDefinition Height="0.029*"/>
+				<RowDefinition Height="0.03*"/>
+				<RowDefinition Height="0.146*"/>
+				<RowDefinition Height="0.118*"/>
+				<RowDefinition Height="0.117*"/>
+				<RowDefinition Height="0.062*"/>
+			</Grid.RowDefinitions>
+			<Label Content="Usuario :" Margin="-0.648,0.083,0,0" FontFamily="Quartz MS" FontSize="18.667" Grid.Row="1" Grid.Column="1"/>
+			<Label Content="COntraseña :" Height="40" Margin="-0.648,-0.19,0,0" VerticalAlignment="Top" FontFamily="Quartz MS" FontSize="18.667" Grid.Row="4" Grid.Column="1"/>
+			<PasswordBox Grid.Column="4" Margin="0,0,0,0.048" Grid.Row="4" FontFamily="Quartz MS" FontSize="18.667" Background="#FF742B2B"/>
+			<TextBox Grid.Column="4" Margin="0.146,0,0,0.083" Grid.Row="1" TextWrapping="Wrap" Background="#FF742B2B" FontFamily="Quartz MS" FontSize="18.667"/>
+			<Button Content="Acceder" Grid.Column="4" Margin="0.146,0,0,0" Grid.Row="6" RenderTransformOrigin="1,0" BorderThickness="3" Opacity="0.73" Background="#FFD4D0C8"/>
+			<Path Grid.Column="5" Data="M423.16466,34.384073 C429.57234,35.949607 422.75724,27.611936 431.30524,30.342483" HorizontalAlignment="Right" Height="7.166" Margin="0,28.392,28.272,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="11.076" RenderTransformOrigin="0.5,0.5">
+				<Path.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="-48.67"/>
+						<TranslateTransform X="-0.23752923516657543" Y="-0.25121327376620606"/>
+					</TransformGroup>
+				</Path.RenderTransform>
+			</Path>
+		</Grid>
+		<Grid Grid.ColumnSpan="2" Height="16" VerticalAlignment="Top"/>
+	</Grid>
+</Window>
