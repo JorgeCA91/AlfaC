@@ -19,9 +19,10 @@ namespace AlfaC
 	{
 		public Login()
 		{
-			this.InitializeComponent();
 			SplashScreen sp = new SplashScreen("Splash.png");
 			sp.Show(true);
+			this.InitializeComponent();
+			
 			
 			// A partir de este punto se requiere la inserción de código para la creación del objeto.
 		}
